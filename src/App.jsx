@@ -10,6 +10,7 @@ import ColorPalette from './components/ColorPalette.jsx';
 import FlagCanvas from './components/FlagCanvas.jsx';
 import CountrySelect from './components/CountrySelect.jsx';
 import WorldMapSelector from './components/WorldMapSelector.jsx';
+import RevealMode from './modes/RevealMode.jsx';
 
 const emptyPaint = (flag) =>
   Object.fromEntries(flag.regions.map((region) => [region.id, '#ffffff']));
@@ -150,6 +151,7 @@ function App() {
   const [hintsUsed, setHintsUsed] = useState(0);
   const [difficultyFilter, setDifficultyFilter] = useState('all');
   const [selectionMode, setSelectionMode] = useState('cards');
+  const [gameMode, setGameMode] = useState('paint');
   const [playList, setPlayList] = useState([]);
   const [currentPlayIndex, setCurrentPlayIndex] = useState(0);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -519,6 +521,10 @@ function App() {
     }
   };
 
+  if (gameMode === 'reveal') {
+    return <RevealMode flags={flags} onExit={() => setGameMode('paint')} />;
+  }
+
   if (sessionComplete) {
     return (
       <main className="app-shell">
@@ -566,6 +572,21 @@ function App() {
               Choose a country, paint each outlined part of the flag, and see how
               many you can complete.
             </p>
+          </div>
+          <div className="selection-tabs" aria-label="Choose game mode">
+            <button
+              className="active"
+              type="button"
+              onClick={() => setGameMode('paint')}
+            >
+              Paint the Flag
+            </button>
+            <button
+              type="button"
+              onClick={() => setGameMode('reveal')}
+            >
+              Flag Reveal
+            </button>
           </div>
           <div className="selection-tabs" aria-label="Choose selection mode">
             <button

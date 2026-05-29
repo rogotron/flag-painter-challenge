@@ -1,0 +1,259 @@
+/* Flag Reveal mode styles. All classes are namespaced reveal-* to avoid
+   collisions with the painting game in styles.css. */
+
+.reveal-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.reveal-stage {
+  position: relative;
+  width: min(560px, 100%);
+  aspect-ratio: 3 / 2; /* matches the 0 0 300 200 flag viewBox */
+  margin: 0 auto;
+}
+
+.reveal-flag-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 14px 30px rgba(25, 32, 42, 0.18);
+  background: #ffffff;
+}
+
+.reveal-cover-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+}
+
+.reveal-cover-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ffffff;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #5b7cfa 0%, #8a63f2 100%);
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+}
+
+.reveal-cover-panel:hover:not(.revealed) {
+  filter: brightness(1.06);
+}
+
+.reveal-cover-panel:focus-visible {
+  outline: 4px solid #ffd166;
+  outline-offset: 2px;
+}
+
+.reveal-cover-face {
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-weight: 800;
+  opacity: 0.85;
+}
+
+.reveal-cover-panel.revealed {
+  opacity: 0;
+  transform: scale(0.85);
+  pointer-events: none;
+}
+
+/* --- Letter scramble (Stage 2A) --- */
+.reveal-scramble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.reveal-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.reveal-slot {
+  width: clamp(40px, 11vw, 56px);
+  height: clamp(48px, 13vw, 64px);
+  border: 3px dashed #b6c2d9;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: clamp(1.3rem, 5vw, 1.9rem);
+  font-weight: 800;
+  color: #1f2a3a;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.1s ease;
+}
+
+.reveal-slot.filled {
+  border-style: solid;
+  border-color: #5b7cfa;
+  background: #eef2ff;
+}
+
+/* Empty slots look tappable; filled slots look removable. */
+.reveal-slot:not(.filled):hover {
+  border-color: #5b7cfa;
+  background: #f5f8ff;
+}
+
+.reveal-slot.filled:hover {
+  border-color: #ef6461;
+  background: #fdeceb;
+}
+
+.reveal-slot:focus-visible,
+.reveal-tile:focus-visible {
+  outline: 4px solid #ffd166;
+  outline-offset: 2px;
+}
+
+/* Word gap between multi-word country names. */
+.reveal-slot-gap {
+  width: clamp(16px, 5vw, 28px);
+  height: 1px;
+}
+
+.reveal-tray {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-height: clamp(48px, 13vw, 64px);
+  padding: 8px;
+  border-radius: 14px;
+  border: 2px dashed transparent;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+/* Drag-over feedback (drag-and-drop enhancement, Stage 3B). */
+.reveal-tray.drag-over {
+  border-color: #f5a623;
+  background: #fff7e8;
+}
+
+.reveal-slot.drag-over {
+  border-style: solid;
+  border-color: #5b7cfa;
+  background: #e0e7ff;
+  transform: scale(1.05);
+}
+
+.reveal-tile[draggable='true'] {
+  cursor: grab;
+}
+
+.reveal-tile {
+  width: clamp(44px, 12vw, 60px);
+  height: clamp(48px, 13vw, 64px);
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffd166 0%, #f5a623 100%);
+  color: #3a2a00;
+  font-size: clamp(1.3rem, 5vw, 1.9rem);
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(245, 166, 35, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.reveal-tile:hover {
+  transform: translateY(-2px);
+}
+
+.reveal-tile.selected {
+  transform: translateY(-3px) scale(1.05);
+  outline: 4px solid #5b7cfa;
+  outline-offset: 2px;
+}
+
+.reveal-message {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #475467;
+  min-height: 1.4em;
+  margin: 0;
+}
+
+.reveal-message.hint {
+  color: #5b7cfa;
+}
+
+.reveal-message.wrong {
+  color: #c2410c;
+}
+
+.reveal-scramble-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* --- Instructions, summary + solved banner (Stage 2B / 3A) --- */
+.reveal-instructions {
+  max-width: 34rem;
+  margin: 8px auto 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #475467;
+}
+
+.reveal-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  width: min(560px, 100%);
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: #eef2ff;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #344054;
+}
+
+.reveal-solved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: min(560px, 100%);
+  padding: 22px 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #d1fae5 0%, #ecfdf5 100%);
+  box-shadow: 0 12px 26px rgba(16, 185, 129, 0.22);
+}
+
+.reveal-solved-title {
+  margin: 0;
+  font-size: clamp(1.8rem, 7vw, 2.6rem);
+  font-weight: 800;
+  color: #15803d;
+}
+
+.reveal-earned {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #15803d;
+}
+
+@media (max-width: 480px) {
+  .reveal-summary {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+}
