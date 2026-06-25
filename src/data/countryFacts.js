@@ -263,5 +263,70 @@ export const countryFacts = {
     capital: 'Wellington',
     language: 'Maori',
     hello: 'Kia ora'
+  },
+  china: {
+    capital: 'Beijing',
+    language: 'Mandarin',
+    hello: 'Ni hao'
+  },
+  colombia: {
+    capital: 'Bogota',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  peru: {
+    capital: 'Lima',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  'costa-rica': {
+    capital: 'San Jose',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  'united-arab-emirates': {
+    capital: 'Abu Dhabi',
+    language: 'Arabic',
+    hello: 'Marhaba'
+  },
+  iceland: {
+    capital: 'Reykjavik',
+    language: 'Icelandic',
+    hello: 'Hallo'
+  },
+  chile: {
+    capital: 'Santiago',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  cuba: {
+    capital: 'Havana',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  israel: {
+    capital: 'Jerusalem',
+    language: 'Hebrew',
+    hello: 'Shalom'
+  },
+  pakistan: {
+    capital: 'Islamabad',
+    language: 'Urdu',
+    hello: 'Assalam-o-alaikum'
+  },
+  singapore: {
+    capital: 'Singapore',
+    language: 'English',
+    hello: 'Hello'
+  },
+  venezuela: {
+    capital: 'Caracas',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  mongolia: {
+    capital: 'Ulaanbaatar',
+    language: 'Mongolian',
+    hello: 'Sain uu'
   }
 };

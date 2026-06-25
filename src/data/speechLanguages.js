@@ -51,5 +51,18 @@ export const speechLanguages = {
   thailand: 'th-TH',
   philippines: 'fil-PH',
   'united-kingdom': 'en-GB',
-  'new-zealand': 'mi-NZ'
+  'new-zealand': 'mi-NZ',
+  china: 'zh-CN',
+  colombia: 'es-CO',
+  peru: 'es-PE',
+  'costa-rica': 'es-CR',
+  'united-arab-emirates': 'ar-AE',
+  iceland: 'is-IS',
+  chile: 'es-CL',
+  cuba: 'es-CU',
+  israel: 'he-IL',
+  pakistan: 'ur-PK',
+  singapore: 'en-SG',
+  venezuela: 'es-VE',
+  mongolia: 'mn-MN'
 };

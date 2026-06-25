@@ -929,6 +929,208 @@ export const flags = [
       region({ id: 'white-star-borders', label: 'White star borders', type: 'path', attrs: { d: `${starPath(218, 52, 17, 7)} ${starPath(248, 82, 15, 6)} ${starPath(216, 132, 16, 6.5)} ${starPath(178, 100, 14, 5.5)}` }, correctColor: COLORS.white, strokeWidth: 1.5, hint: 'The Southern Cross stars have white borders.' }),
       region({ id: 'red-stars', label: 'Red star centers', type: 'path', attrs: { d: `${starPath(218, 52, 11, 4.5)} ${starPath(248, 82, 10, 4)} ${starPath(216, 132, 10.5, 4)} ${starPath(178, 100, 9, 3.5)}` }, correctColor: COLORS.red, strokeWidth: 1.5, hint: 'The centers of the stars are red.' })
     ]
+  },
+  {
+    ...flagBase,
+    id: 'china',
+    name: 'China',
+    difficulty: 'medium',
+    mapPosition: { x: 77, y: 40 },
+    palette: [color('red'), color('yellow')],
+    previewColors: [COLORS.red, COLORS.yellow],
+    regions: [
+      region({ id: 'red-field', label: 'Red field', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 200 }, correctColor: COLORS.red, hint: 'China has a red background.' }),
+      region({ id: 'big-star', label: 'Large star', type: 'polygon', attrs: { points: starPoints(55, 52, 24, 10) }, correctColor: COLORS.yellow, hint: 'The big star is yellow.' }),
+      region({ id: 'small-stars', label: 'Four small stars', type: 'path', attrs: { d: `${starPath(110, 24, 9, 3.7)} ${starPath(132, 44, 9, 3.7)} ${starPath(132, 74, 9, 3.7)} ${starPath(110, 96, 9, 3.7)}` }, correctColor: COLORS.yellow, strokeWidth: 1.5, hint: 'The four little stars are yellow too.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'colombia',
+    name: 'Colombia',
+    difficulty: 'easy',
+    mapPosition: { x: 30, y: 60 },
+    palette: [color('yellow'), color('blue'), color('red')],
+    previewColors: [COLORS.yellow, COLORS.blue, COLORS.red],
+    regions: [
+      region({ id: 'yellow-stripe', label: 'Top yellow stripe', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 100 }, correctColor: COLORS.yellow, hint: 'The wide top stripe is yellow.' }),
+      region({ id: 'blue-stripe', label: 'Middle blue stripe', type: 'rect', attrs: { x: 0, y: 100, width: 300, height: 50 }, correctColor: COLORS.blue, hint: 'Blue is the middle stripe.' }),
+      region({ id: 'red-stripe', label: 'Bottom red stripe', type: 'rect', attrs: { x: 0, y: 150, width: 300, height: 50 }, correctColor: COLORS.red, hint: 'Red is the bottom stripe.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'peru',
+    name: 'Peru',
+    difficulty: 'easy',
+    mapPosition: { x: 29, y: 69 },
+    palette: [color('red'), color('white')],
+    previewColors: [COLORS.red, COLORS.white, COLORS.red],
+    regions: [
+      region({ id: 'left-red-stripe', label: 'Left red stripe', type: 'rect', attrs: { x: 0, y: 0, width: 100, height: 200 }, correctColor: COLORS.red, hint: 'Red is on the flagpole side.' }),
+      region({ id: 'white-stripe', label: 'Middle white stripe', type: 'rect', attrs: { x: 100, y: 0, width: 100, height: 200 }, correctColor: COLORS.white, hint: 'White stays in the middle.' }),
+      region({ id: 'right-red-stripe', label: 'Right red stripe', type: 'rect', attrs: { x: 200, y: 0, width: 100, height: 200 }, correctColor: COLORS.red, hint: 'Red is on the right.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'costa-rica',
+    name: 'Costa Rica',
+    difficulty: 'easy',
+    mapPosition: { x: 22, y: 56 },
+    palette: [color('blue'), color('white'), color('red')],
+    previewColors: [COLORS.blue, COLORS.white, COLORS.red],
+    regions: [
+      region({ id: 'top-blue-stripe', label: 'Top blue stripe', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 33.33 }, correctColor: COLORS.blue, hint: 'Blue is the top stripe.' }),
+      region({ id: 'upper-white-stripe', label: 'Upper white stripe', type: 'rect', attrs: { x: 0, y: 33.33, width: 300, height: 33.33 }, correctColor: COLORS.white, hint: 'A white stripe sits below the top blue stripe.' }),
+      region({ id: 'red-stripe', label: 'Wide red middle stripe', type: 'rect', attrs: { x: 0, y: 66.66, width: 300, height: 66.68 }, correctColor: COLORS.red, hint: 'The wide center stripe is red.' }),
+      region({ id: 'lower-white-stripe', label: 'Lower white stripe', type: 'rect', attrs: { x: 0, y: 133.34, width: 300, height: 33.33 }, correctColor: COLORS.white, hint: 'A white stripe sits above the bottom blue stripe.' }),
+      region({ id: 'bottom-blue-stripe', label: 'Bottom blue stripe', type: 'rect', attrs: { x: 0, y: 166.67, width: 300, height: 33.33 }, correctColor: COLORS.blue, hint: 'Blue is the bottom stripe.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'united-arab-emirates',
+    name: 'United Arab Emirates',
+    difficulty: 'easy',
+    mapPosition: { x: 63, y: 50 },
+    palette: [color('red'), color('green'), color('white'), color('black')],
+    previewColors: [COLORS.green, COLORS.white, COLORS.black],
+    regions: [
+      region({ id: 'red-bar', label: 'Red bar', type: 'rect', attrs: { x: 0, y: 0, width: 75, height: 200 }, correctColor: COLORS.red, hint: 'A red bar runs down the flagpole side.' }),
+      region({ id: 'green-stripe', label: 'Top green stripe', type: 'rect', attrs: { x: 75, y: 0, width: 225, height: 66.67 }, correctColor: COLORS.green, hint: 'Green is the top stripe.' }),
+      region({ id: 'white-stripe', label: 'Middle white stripe', type: 'rect', attrs: { x: 75, y: 66.67, width: 225, height: 66.67 }, correctColor: COLORS.white, hint: 'White is the middle stripe.' }),
+      region({ id: 'black-stripe', label: 'Bottom black stripe', type: 'rect', attrs: { x: 75, y: 133.34, width: 225, height: 66.66 }, correctColor: COLORS.black, hint: 'Black is the bottom stripe.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'iceland',
+    name: 'Iceland',
+    difficulty: 'medium',
+    mapPosition: { x: 42, y: 22 },
+    palette: [color('blue'), color('white'), color('red')],
+    previewColors: [COLORS.blue, COLORS.white, COLORS.red],
+    regions: [
+      region({ id: 'blue-field', label: 'Blue field', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 200 }, correctColor: COLORS.blue, hint: 'Iceland has a blue background.' }),
+      region({ id: 'vertical-white-cross', label: 'Vertical white border', type: 'rect', attrs: { x: 84, y: 0, width: 56, height: 200 }, correctColor: COLORS.white, hint: 'White borders the red cross.' }),
+      region({ id: 'horizontal-white-cross', label: 'Horizontal white border', type: 'rect', attrs: { x: 0, y: 72, width: 300, height: 56 }, correctColor: COLORS.white, hint: 'White borders the red cross.' }),
+      region({ id: 'vertical-red-cross', label: 'Vertical red cross bar', type: 'rect', attrs: { x: 98, y: 0, width: 28, height: 200 }, correctColor: COLORS.red, hint: 'The inner cross is red.' }),
+      region({ id: 'horizontal-red-cross', label: 'Horizontal red cross bar', type: 'rect', attrs: { x: 0, y: 86, width: 300, height: 28 }, correctColor: COLORS.red, hint: 'The inner cross is red.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'chile',
+    name: 'Chile',
+    difficulty: 'medium',
+    mapPosition: { x: 29, y: 80 },
+    palette: [color('blue'), color('white'), color('red')],
+    previewColors: [COLORS.blue, COLORS.white, COLORS.red],
+    regions: [
+      region({ id: 'white-field', label: 'Top white field', type: 'rect', attrs: { x: 100, y: 0, width: 200, height: 100 }, correctColor: COLORS.white, hint: 'The top-right area is white.' }),
+      region({ id: 'red-field', label: 'Bottom red field', type: 'rect', attrs: { x: 0, y: 100, width: 300, height: 100 }, correctColor: COLORS.red, hint: 'The bottom half is red.' }),
+      region({ id: 'blue-canton', label: 'Blue square', type: 'rect', attrs: { x: 0, y: 0, width: 100, height: 100 }, correctColor: COLORS.blue, hint: 'The square in the corner is blue.' }),
+      region({ id: 'white-star', label: 'White star', type: 'polygon', attrs: { points: starPoints(50, 50, 30, 12) }, correctColor: COLORS.white, strokeWidth: 2, hint: 'The star in the blue square is white.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'cuba',
+    name: 'Cuba',
+    difficulty: 'medium',
+    mapPosition: { x: 25, y: 48 },
+    palette: [color('blue'), color('white'), color('red')],
+    previewColors: [COLORS.blue, COLORS.white, COLORS.red],
+    regions: [
+      region({ id: 'stripe-1', label: 'Top blue stripe', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 40 }, correctColor: COLORS.blue, hint: 'Cuba has three blue stripes and two white ones.' }),
+      region({ id: 'stripe-2', label: 'Second stripe', type: 'rect', attrs: { x: 0, y: 40, width: 300, height: 40 }, correctColor: COLORS.white, hint: 'The second stripe is white.' }),
+      region({ id: 'stripe-3', label: 'Middle stripe', type: 'rect', attrs: { x: 0, y: 80, width: 300, height: 40 }, correctColor: COLORS.blue, hint: 'The middle stripe is blue.' }),
+      region({ id: 'stripe-4', label: 'Fourth stripe', type: 'rect', attrs: { x: 0, y: 120, width: 300, height: 40 }, correctColor: COLORS.white, hint: 'The fourth stripe is white.' }),
+      region({ id: 'stripe-5', label: 'Bottom blue stripe', type: 'rect', attrs: { x: 0, y: 160, width: 300, height: 40 }, correctColor: COLORS.blue, hint: 'The bottom stripe is blue.' }),
+      region({ id: 'red-triangle', label: 'Red triangle', type: 'polygon', attrs: { points: '0,0 130,100 0,200' }, correctColor: COLORS.red, strokeWidth: 2, hint: 'The triangle on the flagpole side is red.' }),
+      region({ id: 'white-star', label: 'White star', type: 'polygon', attrs: { points: starPoints(43, 100, 24, 10) }, correctColor: COLORS.white, strokeWidth: 2, hint: 'The star inside the triangle is white.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'israel',
+    name: 'Israel',
+    difficulty: 'medium',
+    mapPosition: { x: 57, y: 48 },
+    palette: [color('white'), color('blue')],
+    previewColors: [COLORS.white, COLORS.blue, COLORS.white],
+    regions: [
+      region({ id: 'white-field', label: 'White field', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 200 }, correctColor: COLORS.white, hint: 'Israel has a white background.' }),
+      region({ id: 'top-blue-stripe', label: 'Top blue stripe', type: 'rect', attrs: { x: 0, y: 30, width: 300, height: 20 }, correctColor: COLORS.blue, hint: 'A blue stripe runs near the top.' }),
+      region({ id: 'bottom-blue-stripe', label: 'Bottom blue stripe', type: 'rect', attrs: { x: 0, y: 150, width: 300, height: 20 }, correctColor: COLORS.blue, hint: 'A blue stripe runs near the bottom.' }),
+      region({ id: 'star-of-david', label: 'Star of David', type: 'path', attrs: { d: 'M150 70 L124 115 L176 115 Z M150 130 L124 85 L176 85 Z' }, correctColor: COLORS.blue, strokeWidth: 2.5, hint: 'The six-pointed star in the center is blue.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'pakistan',
+    name: 'Pakistan',
+    difficulty: 'medium',
+    mapPosition: { x: 66, y: 47 },
+    palette: [color('green'), color('white')],
+    previewColors: [COLORS.green, COLORS.white],
+    regions: [
+      region({ id: 'white-bar', label: 'White bar', type: 'rect', attrs: { x: 0, y: 0, width: 75, height: 200 }, correctColor: COLORS.white, strokeWidth: 2, hint: 'A white bar runs down the flagpole side.' }),
+      region({ id: 'green-field', label: 'Green field', type: 'rect', attrs: { x: 75, y: 0, width: 225, height: 200 }, correctColor: COLORS.green, hint: 'The rest of the flag is green.' }),
+      region({ id: 'crescent-outer', label: 'Outer crescent circle', type: 'circle', attrs: { cx: 178, cy: 105, r: 38 }, correctColor: COLORS.white, hint: 'The crescent is white.' }),
+      region({ id: 'crescent-cutout', label: 'Crescent green cutout', type: 'circle', attrs: { cx: 192, cy: 97, r: 31 }, correctColor: COLORS.green, hint: 'The cutout that shapes the crescent is green.' }),
+      region({ id: 'white-star', label: 'White star', type: 'polygon', attrs: { points: starPoints(214, 78, 18, 7) }, correctColor: COLORS.white, strokeWidth: 2, hint: 'The star next to the crescent is white.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'singapore',
+    name: 'Singapore',
+    difficulty: 'medium',
+    mapPosition: { x: 76, y: 63 },
+    palette: [color('red'), color('white')],
+    previewColors: [COLORS.red, COLORS.white],
+    regions: [
+      region({ id: 'red-top', label: 'Top red stripe', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 100 }, correctColor: COLORS.red, hint: 'Red is the top half.' }),
+      region({ id: 'white-bottom', label: 'Bottom white stripe', type: 'rect', attrs: { x: 0, y: 100, width: 300, height: 100 }, correctColor: COLORS.white, hint: 'White is the bottom half.' }),
+      region({ id: 'crescent-outer', label: 'Outer crescent circle', type: 'circle', attrs: { cx: 70, cy: 50, r: 32 }, correctColor: COLORS.white, hint: 'The crescent moon is white.' }),
+      region({ id: 'crescent-cutout', label: 'Crescent red cutout', type: 'circle', attrs: { cx: 86, cy: 50, r: 26 }, correctColor: COLORS.red, hint: 'The cutout that shapes the crescent is red.' }),
+      region({ id: 'white-stars', label: 'Five white stars', type: 'path', attrs: { d: `${starPath(124, 33, 9, 3.7)} ${starPath(145, 48, 9, 3.7)} ${starPath(137, 73, 9, 3.7)} ${starPath(111, 73, 9, 3.7)} ${starPath(103, 48, 9, 3.7)}` }, correctColor: COLORS.white, strokeWidth: 1.5, hint: 'The five little stars are white.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'venezuela',
+    name: 'Venezuela',
+    difficulty: 'medium',
+    mapPosition: { x: 33, y: 59 },
+    palette: [color('yellow'), color('blue'), color('red'), color('white')],
+    previewColors: [COLORS.yellow, COLORS.blue, COLORS.red],
+    regions: [
+      region({ id: 'yellow-stripe', label: 'Top yellow stripe', type: 'rect', attrs: { x: 0, y: 0, width: 300, height: 66.67 }, correctColor: COLORS.yellow, hint: 'Yellow is the top stripe.' }),
+      region({ id: 'blue-stripe', label: 'Middle blue stripe', type: 'rect', attrs: { x: 0, y: 66.67, width: 300, height: 66.67 }, correctColor: COLORS.blue, hint: 'Blue is the middle stripe.' }),
+      region({ id: 'red-stripe', label: 'Bottom red stripe', type: 'rect', attrs: { x: 0, y: 133.34, width: 300, height: 66.66 }, correctColor: COLORS.red, hint: 'Red is the bottom stripe.' }),
+      region({ id: 'white-stars', label: 'Arc of white stars', type: 'path', attrs: { d: `${starPath(96, 89, 6, 2.5)} ${starPath(112, 93, 6, 2.5)} ${starPath(128, 96, 6, 2.5)} ${starPath(142, 98, 6, 2.5)} ${starPath(158, 98, 6, 2.5)} ${starPath(172, 96, 6, 2.5)} ${starPath(188, 93, 6, 2.5)} ${starPath(204, 89, 6, 2.5)}` }, correctColor: COLORS.white, strokeWidth: 1.2, hint: 'The little stars curve in an arc and are white.' })
+    ]
+  },
+  {
+    ...flagBase,
+    id: 'mongolia',
+    name: 'Mongolia',
+    difficulty: 'hard',
+    mapPosition: { x: 74, y: 35 },
+    palette: [color('red'), color('blue'), color('yellow')],
+    previewColors: [COLORS.red, COLORS.blue, COLORS.red],
+    regions: [
+      region({ id: 'left-red-band', label: 'Left red band', type: 'rect', attrs: { x: 0, y: 0, width: 100, height: 200 }, correctColor: COLORS.red, hint: 'Mongolia has red bands on the left and right.' }),
+      region({ id: 'blue-band', label: 'Middle blue band', type: 'rect', attrs: { x: 100, y: 0, width: 100, height: 200 }, correctColor: COLORS.blue, hint: 'The middle band is blue.' }),
+      region({ id: 'right-red-band', label: 'Right red band', type: 'rect', attrs: { x: 200, y: 0, width: 100, height: 200 }, correctColor: COLORS.red, hint: 'The right band is red too.' }),
+      region({ id: 'soyombo-flame', label: 'Emblem flame', type: 'polygon', attrs: { points: '44,40 50,18 56,40' }, correctColor: COLORS.yellow, strokeWidth: 2, hint: 'The flame at the top of the emblem is yellow.' }),
+      region({ id: 'soyombo-sun', label: 'Emblem sun', type: 'circle', attrs: { cx: 50, cy: 52, r: 6 }, correctColor: COLORS.yellow, strokeWidth: 2, hint: 'The sun shape is yellow.' }),
+      region({ id: 'soyombo-circle', label: 'Emblem circle', type: 'circle', attrs: { cx: 50, cy: 100, r: 11 }, correctColor: COLORS.yellow, strokeWidth: 2, hint: 'The round center of the emblem is yellow.' }),
+      region({ id: 'soyombo-bars', label: 'Emblem bars', type: 'path', attrs: { d: 'M36 78 H64 V85 H36 Z M36 115 H64 V122 H36 Z' }, correctColor: COLORS.yellow, strokeWidth: 2, hint: 'The two flat bars in the emblem are yellow.' })
+    ]
   }
 ];
 

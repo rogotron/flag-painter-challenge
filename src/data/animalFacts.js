@@ -210,5 +210,57 @@ export const animalFacts = {
   'new-zealand': {
     animal: 'Kiwi',
     fact: 'Kiwis are flightless birds with nostrils near the tips of their long beaks.'
+  },
+  china: {
+    animal: 'Giant panda',
+    fact: 'Giant pandas can spend up to 12 hours a day munching on bamboo.'
+  },
+  colombia: {
+    animal: 'Andean condor',
+    fact: 'The Andean condor is one of the largest flying birds, with wings wider than a door is tall.'
+  },
+  peru: {
+    animal: 'Vicuna',
+    fact: 'Vicunas are wild relatives of llamas and grow some of the softest wool in the world.'
+  },
+  'costa-rica': {
+    animal: 'Three-toed sloth',
+    fact: 'Three-toed sloths move so slowly that tiny green algae can grow on their fur.'
+  },
+  'united-arab-emirates': {
+    animal: 'Arabian oryx',
+    fact: 'The Arabian oryx is a desert antelope that can go a long time without drinking water.'
+  },
+  iceland: {
+    animal: 'Atlantic puffin',
+    fact: 'Atlantic puffins are nicknamed sea parrots for their colorful beaks and flap their wings very fast.'
+  },
+  chile: {
+    animal: 'Pudu',
+    fact: 'The pudu is the world\'s smallest deer, only about as tall as a medium dog.'
+  },
+  cuba: {
+    animal: 'Bee hummingbird',
+    fact: 'The bee hummingbird is the smallest bird on Earth, roughly the size of a bee.'
+  },
+  israel: {
+    animal: 'Hoopoe',
+    fact: 'The hoopoe is Israel\'s national bird and can raise a fan of feathers on its head like a crown.'
+  },
+  pakistan: {
+    animal: 'Markhor',
+    fact: 'The markhor is a wild mountain goat with amazing corkscrew-shaped horns.'
+  },
+  singapore: {
+    animal: 'Smooth-coated otter',
+    fact: 'Smooth-coated otters live in family groups and swim through Singapore\'s city rivers.'
+  },
+  venezuela: {
+    animal: 'Capybara',
+    fact: 'Capybaras are the world\'s largest rodents and love relaxing in water with other animals.'
+  },
+  mongolia: {
+    animal: "Przewalski's horse",
+    fact: 'Przewalski\'s horse is the last truly wild horse and once roamed the Mongolian grasslands in herds.'
   }
 };

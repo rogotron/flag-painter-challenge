@@ -19,6 +19,8 @@ const germanHallo = clip('De-hallo.ogg', 'Jeuwre, CC BY-SA 4.0');
 const koreanAnnyeonghaseyo = clip('%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94.ogg', 'HappyMidnight, CC BY-SA 4.0');
 const portugueseOla = clip('Pt-ol%C3%A1.oga', 'Memie, CC BY-SA 3.0');
 const spanishHola = clip('Es-hola.oga', 'Josemoya, CC BY-SA 3.0 / GFDL');
+const hebrewShalom = clip('He-Shalom.ogg', 'Nadavspi~commonswiki, CC BY-SA 3.0');
+const mandarinNihao = clip('Zh%20n%C7%90%20h%C7%8Eo.ogg', 'Sjors Provoost, CC BY-SA 3.0');
 
 export const greetingRecordings = {
   france: recording(bonjour),
@@ -48,5 +50,14 @@ export const greetingRecordings = {
   belgium: recording(dutchHallo, bonjour),
   portugal: recording(portugueseOla),
   'south-korea': recording(koreanAnnyeonghaseyo),
-  'united-kingdom': recording(englishHello)
+  'united-kingdom': recording(englishHello),
+  china: recording(mandarinNihao),
+  colombia: recording(spanishHola),
+  peru: recording(spanishHola),
+  'costa-rica': recording(spanishHola),
+  chile: recording(spanishHola),
+  cuba: recording(spanishHola),
+  venezuela: recording(spanishHola),
+  israel: recording(hebrewShalom),
+  singapore: recording(englishHello)
 };
