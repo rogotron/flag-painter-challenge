@@ -21,6 +21,7 @@ const portugueseOla = clip('Pt-ol%C3%A1.oga', 'Memie, CC BY-SA 3.0');
 const spanishHola = clip('Es-hola.oga', 'Josemoya, CC BY-SA 3.0 / GFDL');
 const hebrewShalom = clip('He-Shalom.ogg', 'Nadavspi~commonswiki, CC BY-SA 3.0');
 const mandarinNihao = clip('Zh%20n%C7%90%20h%C7%8Eo.ogg', 'Sjors Provoost, CC BY-SA 3.0');
+const greekYassas = clip('EL-%CE%B3%CE%B5%CE%B9%CE%B1-%CF%83%CE%B1%CF%82.ogg', 'Sarri.greek, CC BY-SA 4.0');
 
 export const greetingRecordings = {
   france: recording(bonjour),
@@ -36,7 +37,7 @@ export const greetingRecordings = {
   spain: recording(spanishHola),
   canada: recording(englishHello, bonjour),
   argentina: recording(spanishHola),
-  greece: recording(clip('EL-%CE%B3%CE%B5%CE%B9%CE%B1-%CF%83%CE%B1%CF%82.ogg', 'Sarri.greek, CC BY-SA 4.0')),
+  greece: recording(greekYassas),
   sweden: recording(clip('Sv-hej.ogg', 'M. Kihlstedt and N. Vion / The Shtooka Project, CC BY 2.0 FR')),
   turkey: recording(clip('Merhaba.ogg', 'Erkan Yilmaz, GFDL')),
   hungary: recording(clip('Hu-szia.ogg', 'Panda10, CC BY-SA 3.0')),
@@ -59,5 +60,12 @@ export const greetingRecordings = {
   cuba: recording(spanishHola),
   venezuela: recording(spanishHola),
   israel: recording(hebrewShalom),
-  singapore: recording(englishHello)
+  singapore: recording(englishHello),
+  england: recording(englishHello),
+  bolivia: recording(spanishHola),
+  cameroon: recording(bonjour, englishHello),
+  'trinidad-and-tobago': recording(englishHello),
+  cyprus: recording(greekYassas),
+  'cape-verde': recording(portugueseOla),
+  mozambique: recording(portugueseOla)
 };

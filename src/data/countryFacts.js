@@ -328,5 +328,70 @@ export const countryFacts = {
     capital: 'Ulaanbaatar',
     language: 'Mongolian',
     hello: 'Sain uu'
+  },
+  england: {
+    capital: 'London',
+    language: 'English',
+    hello: 'Hello'
+  },
+  bolivia: {
+    capital: 'Sucre and La Paz',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  cameroon: {
+    capital: 'Yaounde',
+    language: 'French and English',
+    hello: 'Bonjour / Hello'
+  },
+  palau: {
+    capital: 'Ngerulmud',
+    language: 'Palauan',
+    hello: 'Alii'
+  },
+  'trinidad-and-tobago': {
+    capital: 'Port of Spain',
+    language: 'English',
+    hello: 'Hello'
+  },
+  'timor-leste': {
+    capital: 'Dili',
+    language: 'Tetum',
+    hello: 'Bondia'
+  },
+  cyprus: {
+    capital: 'Nicosia',
+    language: 'Greek',
+    hello: 'Yassas'
+  },
+  albania: {
+    capital: 'Tirana',
+    language: 'Albanian',
+    hello: 'Pershendetje'
+  },
+  kyrgyzstan: {
+    capital: 'Bishkek',
+    language: 'Kyrgyz',
+    hello: 'Salam'
+  },
+  kazakhstan: {
+    capital: 'Astana',
+    language: 'Kazakh',
+    hello: 'Salem'
+  },
+  seychelles: {
+    capital: 'Victoria',
+    language: 'Seychellois Creole',
+    hello: 'Bonzour'
+  },
+  'cape-verde': {
+    capital: 'Praia',
+    language: 'Portuguese',
+    hello: 'Ola'
+  },
+  mozambique: {
+    capital: 'Maputo',
+    language: 'Portuguese',
+    hello: 'Ola'
   }
 };

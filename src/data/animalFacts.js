@@ -262,5 +262,57 @@ export const animalFacts = {
   mongolia: {
     animal: "Przewalski's horse",
     fact: 'Przewalski\'s horse is the last truly wild horse and once roamed the Mongolian grasslands in herds.'
+  },
+  england: {
+    animal: 'European robin',
+    fact: 'Robins are one of England\'s favorite birds and sing almost all year round.'
+  },
+  bolivia: {
+    animal: 'Andean flamingo',
+    fact: 'Andean flamingos get their pink color from the tiny creatures they eat in salty mountain lakes.'
+  },
+  cameroon: {
+    animal: 'Goliath frog',
+    fact: 'The goliath frog is the biggest frog on Earth and can grow as large as a house cat.'
+  },
+  palau: {
+    animal: 'Dugong',
+    fact: 'Dugongs are gentle sea cows that graze on underwater seagrass meadows.'
+  },
+  'trinidad-and-tobago': {
+    animal: 'Scarlet ibis',
+    fact: 'Scarlet ibises turn bright red from the crabs and shrimp they eat.'
+  },
+  'timor-leste': {
+    animal: 'Saltwater crocodile',
+    fact: 'A famous Timorese legend says the island was formed from the back of a giant crocodile.'
+  },
+  cyprus: {
+    animal: 'Cyprus mouflon',
+    fact: 'The Cyprus mouflon is a wild sheep with big curved horns that lives only on Cyprus.'
+  },
+  albania: {
+    animal: 'Golden eagle',
+    fact: 'Albania is called the Land of the Eagles, and golden eagles can dive faster than a race car.'
+  },
+  kyrgyzstan: {
+    animal: 'Snow leopard',
+    fact: 'Snow leopards wrap their long fluffy tails around themselves like scarves to stay warm.'
+  },
+  kazakhstan: {
+    animal: 'Saiga antelope',
+    fact: 'Saiga antelopes have big bendy noses that warm up icy air before they breathe it in.'
+  },
+  seychelles: {
+    animal: 'Aldabra giant tortoise',
+    fact: 'Aldabra giant tortoises can live for more than 100 years and spend their days munching plants.'
+  },
+  'cape-verde': {
+    animal: 'Loggerhead sea turtle',
+    fact: 'Cape Verde\'s sandy beaches are one of the most important nesting spots for loggerhead turtles.'
+  },
+  mozambique: {
+    animal: 'African elephant',
+    fact: 'African elephants flap their giant ears like fans to cool down in the heat.'
   }
 };

@@ -64,5 +64,18 @@ export const speechLanguages = {
   pakistan: 'ur-PK',
   singapore: 'en-SG',
   venezuela: 'es-VE',
-  mongolia: 'mn-MN'
+  mongolia: 'mn-MN',
+  england: 'en-GB',
+  bolivia: 'es-BO',
+  cameroon: 'fr-CM',
+  palau: 'en-PW',
+  'trinidad-and-tobago': 'en-TT',
+  'timor-leste': 'pt-TL',
+  cyprus: 'el-CY',
+  albania: 'sq-AL',
+  kyrgyzstan: 'ky-KG',
+  kazakhstan: 'kk-KZ',
+  seychelles: 'fr-SC',
+  'cape-verde': 'pt-CV',
+  mozambique: 'pt-MZ'
 };
