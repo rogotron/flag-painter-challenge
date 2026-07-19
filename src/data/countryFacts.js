@@ -393,5 +393,90 @@ export const countryFacts = {
     capital: 'Maputo',
     language: 'Portuguese',
     hello: 'Ola'
+  },
+  'marshall-islands': {
+    capital: 'Majuro',
+    language: 'Marshallese',
+    hello: 'Iakwe'
+  },
+  gabon: {
+    capital: 'Libreville',
+    language: 'French',
+    hello: 'Bonjour'
+  },
+  bosnia: {
+    capital: 'Sarajevo',
+    language: 'Bosnian',
+    hello: 'Zdravo'
+  },
+  nauru: {
+    capital: 'Yaren',
+    language: 'Nauruan',
+    hello: 'Ekamawir omo'
+  },
+  'dominican-republic': {
+    capital: 'Santo Domingo',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  honduras: {
+    capital: 'Tegucigalpa',
+    language: 'Spanish',
+    hello: 'Hola'
+  },
+  'sierra-leone': {
+    capital: 'Freetown',
+    language: 'Krio',
+    hello: 'Kushe'
+  },
+  'st-kitts-and-nevis': {
+    capital: 'Basseterre',
+    language: 'English',
+    hello: 'Hello'
+  },
+  algeria: {
+    capital: 'Algiers',
+    language: 'Arabic',
+    hello: 'Salam'
+  },
+  liberia: {
+    capital: 'Monrovia',
+    language: 'English',
+    hello: 'Hello'
+  },
+  'south-sudan': {
+    capital: 'Juba',
+    language: 'English',
+    hello: 'Hello'
+  },
+  sudan: {
+    capital: 'Khartoum',
+    language: 'Arabic',
+    hello: 'Salam'
+  },
+  'vatican-city': {
+    capital: 'Vatican City',
+    language: 'Italian and Latin',
+    hello: 'Salve'
+  },
+  uzbekistan: {
+    capital: 'Tashkent',
+    language: 'Uzbek',
+    hello: 'Salom'
+  },
+  cambodia: {
+    capital: 'Phnom Penh',
+    language: 'Khmer',
+    hello: 'Susadei'
+  },
+  laos: {
+    capital: 'Vientiane',
+    language: 'Lao',
+    hello: 'Sabaidee'
+  },
+  myanmar: {
+    capital: 'Naypyidaw',
+    language: 'Burmese',
+    hello: 'Mingalaba'
   }
 };

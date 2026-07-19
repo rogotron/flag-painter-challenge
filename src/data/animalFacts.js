@@ -314,5 +314,73 @@ export const animalFacts = {
   mozambique: {
     animal: 'African elephant',
     fact: 'African elephants flap their giant ears like fans to cool down in the heat.'
+  },
+  'marshall-islands': {
+    animal: 'Green sea turtle',
+    fact: 'Green sea turtles glide through the lagoons of the Marshall Islands and can rest underwater for hours on one breath.'
+  },
+  gabon: {
+    animal: 'Western lowland gorilla',
+    fact: 'Gorilla families in Gabon\'s rainforests are led by a big silverback dad with a patch of silver hair on his back.'
+  },
+  bosnia: {
+    animal: 'Grey wolf',
+    fact: 'Grey wolves roam Bosnia\'s mountain forests and talk to their pack with howls that carry for miles.'
+  },
+  nauru: {
+    animal: 'Great frigatebird',
+    fact: 'Frigatebirds soar over Nauru for days, and the males puff up bright red throat pouches like balloons.'
+  },
+  'dominican-republic': {
+    animal: 'Hispaniolan solenodon',
+    fact: 'The solenodon looks like a big shrew and is one of the only mammals in the world with a venomous bite.'
+  },
+  honduras: {
+    animal: 'Scarlet macaw',
+    fact: 'The scarlet macaw is Honduras\'s national bird and can live for more than 50 years.'
+  },
+  'sierra-leone': {
+    animal: 'Chimpanzee',
+    fact: 'Chimpanzees in Sierra Leone use sticks and stones as tools to crack open tasty nuts.'
+  },
+  'st-kitts-and-nevis': {
+    animal: 'Vervet monkey',
+    fact: 'Playful vervet monkeys live all over St. Kitts and Nevis and love sneaking ripe mangoes.'
+  },
+  algeria: {
+    animal: 'Fennec fox',
+    fact: 'The fennec fox is Algeria\'s national animal and can hear beetles moving under the desert sand.'
+  },
+  liberia: {
+    animal: 'Pygmy hippopotamus',
+    fact: 'Pygmy hippos are shy nighttime explorers only about half as tall as their giant hippo cousins.'
+  },
+  'south-sudan': {
+    animal: 'White-eared kob',
+    fact: 'Huge herds of white-eared kob antelope cross South Sudan in one of the biggest animal migrations on Earth.'
+  },
+  sudan: {
+    animal: 'Dromedary camel',
+    fact: 'Camels store fat in their humps so they can cross Sudan\'s deserts for days without eating.'
+  },
+  'vatican-city': {
+    animal: 'Common swift',
+    fact: 'Swifts zoom over Vatican City\'s domes and can even sleep while flying.'
+  },
+  uzbekistan: {
+    animal: 'Bukhara deer',
+    fact: 'Bukhara deer live in the riverside forests of Uzbekistan and grow tall branching antlers.'
+  },
+  cambodia: {
+    animal: 'Giant ibis',
+    fact: 'The giant ibis is Cambodia\'s national bird and one of the rarest birds in the world.'
+  },
+  laos: {
+    animal: 'Irrawaddy dolphin',
+    fact: 'Irrawaddy dolphins live in the Mekong River and have round faces that look like they are smiling.'
+  },
+  myanmar: {
+    animal: 'Green peafowl',
+    fact: 'The green peafowl is a shining symbol of Myanmar and fans out shimmering tail feathers like a rainbow.'
   }
 };

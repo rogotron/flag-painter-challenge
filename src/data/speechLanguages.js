@@ -77,5 +77,22 @@ export const speechLanguages = {
   kazakhstan: 'kk-KZ',
   seychelles: 'fr-SC',
   'cape-verde': 'pt-CV',
-  mozambique: 'pt-MZ'
+  mozambique: 'pt-MZ',
+  'marshall-islands': 'mh-MH',
+  gabon: 'fr-GA',
+  bosnia: 'bs-BA',
+  nauru: 'na-NR',
+  'dominican-republic': 'es-DO',
+  honduras: 'es-HN',
+  'sierra-leone': 'en-SL',
+  'st-kitts-and-nevis': 'en-KN',
+  algeria: 'ar-DZ',
+  liberia: 'en-LR',
+  'south-sudan': 'en-SS',
+  sudan: 'ar-SD',
+  'vatican-city': 'it-IT',
+  uzbekistan: 'uz-UZ',
+  cambodia: 'km-KH',
+  laos: 'lo-LA',
+  myanmar: 'my-MM'
 };

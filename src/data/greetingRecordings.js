@@ -67,5 +67,11 @@ export const greetingRecordings = {
   'trinidad-and-tobago': recording(englishHello),
   cyprus: recording(greekYassas),
   'cape-verde': recording(portugueseOla),
-  mozambique: recording(portugueseOla)
+  mozambique: recording(portugueseOla),
+  gabon: recording(bonjour),
+  'dominican-republic': recording(spanishHola),
+  honduras: recording(spanishHola),
+  'st-kitts-and-nevis': recording(englishHello),
+  liberia: recording(englishHello),
+  'south-sudan': recording(englishHello)
 };
